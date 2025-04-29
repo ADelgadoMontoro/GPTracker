@@ -1,3 +1,6 @@
+/* ===================== */
+/* ENCABEZADO Y NAVEGACIÓN */
+/* ===================== */
 header {
     display: flex;
     justify-content: left;
@@ -7,18 +10,17 @@ header {
     background: linear-gradient(to right, #dbdbdb,#636262 , #464646,#070707); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+
 body{
     padding: 0%;
     margin-inline: 0%;
     margin-top: 0%;
 }
 
-
 .logo {
     height: auto;
     width: 40%; 
 }
-
 
 nav {
     display: flex;
@@ -36,16 +38,15 @@ nav a {
     transition: all 0.3s ease; 
 }
 
-
 .hover-underline {
     font-size: 1.2rem;
     color: #ffffff;
     position: relative;
     display: inline-block;
-  }
-  
-  .hover-underline::after,
-  .hover-underline::before {
+}
+
+.hover-underline::after,
+.hover-underline::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -56,19 +57,21 @@ nav a {
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.4s ease-out;
-  }
-  
-  .hover-underline::before {
+}
+
+.hover-underline::before {
     top: 3px;
     transform-origin: left;
-  }
-  
-  .hover-underline:hover::after,
-  .hover-underline:hover::before {
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
     transform: scaleX(1);
-  }
-  
-/* Contenedor del logo */
+}
+
+/* ===================== */
+/* LOGO Y SIDEBAR */
+/* ===================== */
 .logo-container {
     position: relative;
     display: inline-block;
@@ -84,11 +87,10 @@ nav a {
     transform: scale(1.05);
 }
 
-/* Barra lateral completa */
 .full-sidebar {
     position: fixed;
     top: 0;
-    left: -300px; /* Oculta inicialmente */
+    left: -300px;
     width: 280px;
     height: 100vh;
     background: linear-gradient(to bottom, #070707, #464646, #636262, #dbdbdb);
@@ -98,9 +100,8 @@ nav a {
     overflow-y: auto;
 }
 
-/* Contenido de la barra */
 .sidebar-content {
-    padding: 80px 20px 20px; /* Espacio para el header */
+    padding: 80px 20px 20px;
     display: flex;
     flex-direction: column;
 }
@@ -120,9 +121,8 @@ nav a {
     padding-left: 25px;
 }
 
-/* Efecto hover */
 .logo-container:hover .full-sidebar {
-    left: 0; /* Muestra la barra */
+    left: 0;
 }
 
 .logo-container:hover::after {
@@ -138,7 +138,10 @@ nav a {
     opacity: 0.5;
     transition: ease-in-out 1s;
 }
+
+/* ===================== */
 /* HERO */
+/* ===================== */
 .hero {
     position: relative;
     height: 70vh;
@@ -177,7 +180,9 @@ nav a {
     color: #ff0000;
 }
 
+/* ===================== */
 /* GALERÍA */
+/* ===================== */
 .gallery-section {
     padding: 40px 5%;
     background-color: #f0f0f0;
@@ -212,7 +217,7 @@ nav a {
 
 .gallery-item img:hover {
     transform: scale(1.05);
-    transition:0.5s
+    transition:0.5s;
 }
 
 .gallery-item p {
@@ -229,6 +234,9 @@ nav a {
     border-bottom-right-radius: 8px;
 }
 
+/* ===================== */
+/* FORMULARIO DE CONTACTO */
+/* ===================== */
 .contact-form {
     background: #333;
     color: white;
@@ -270,6 +278,9 @@ nav a {
     background-color: #c40000;
 }
 
+/* ===================== */
+/* FOOTER */
+/* ===================== */
 .site-footer {
     background-color: #111;
     color: #ccc;
@@ -315,6 +326,10 @@ nav a {
     font-size: 0.8rem;
     color: #888;
 }
+
+/* ===================== */
+/* NOTICIAS */
+/* ===================== */
 .noticias-container {
     display: flex;
     flex-direction: column;
@@ -351,7 +366,7 @@ nav a {
 .noticia-titulo {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* fondo semitransparente */
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     width: 100%;
     text-align: center;
@@ -365,6 +380,10 @@ nav a {
 .noticia-item:hover .noticia-titulo {
     opacity: 1;
 }
+
+/* ===================== */
+/* HORARIOS */
+/* ===================== */
 .horarios-container {
     padding: 40px 20px;
     text-align: center;
@@ -403,7 +422,7 @@ nav a {
 }
 
 .tabla-horarios th {
-    background-color: #ff4747; /* color más llamativo para los encabezados */
+    background-color: #ff4747;
     color: white;
 }
 
@@ -412,6 +431,9 @@ nav a {
     transition: background-color 0.3s;
 }
 
+/* ===================== */
+/* PILOTOS */
+/* ===================== */
 .pilotos-container {
     padding: 40px 20px;
     text-align: center;
@@ -464,6 +486,10 @@ nav a {
 .piloto-link:hover .piloto-overlay {
     opacity: 1;
 }
+
+/* ===================== */
+/* GALERÍA SECUNDARIA */
+/* ===================== */
 .galeria-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -539,6 +565,94 @@ nav a {
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+.faq-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+}
 
+.faq-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
 
+.faq {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
+.faq h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.privacidad-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.privacidad {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.privacidad h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.privacidad h2 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+    color: #333;
+}
+
+.privacidad p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #444;
+}
+.terminos-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.terminos {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.terminos h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.terminos h2 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+    color: #333;
+}
+
+.terminos p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #444;
+}
